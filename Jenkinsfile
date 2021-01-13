@@ -14,6 +14,9 @@ pipeline {
     }
 
     stage('deploy') {
+      environment {
+        stage = 'dev'
+      }
       parallel {
         stage('deploy to dev') {
           steps {

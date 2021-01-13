@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('source') {
       steps {
-        git(url: 'https://github.com/seolminsu90/build-jenkins-sample.git', branch: 'master')
+        git(url: 'https://github.com/seolminsu90/build-jenkins-sample.git', branch: 'develope')
       }
     }
 
